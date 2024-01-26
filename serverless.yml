@@ -1,14 +1,13 @@
 # Serverless Application by Olatunji Olayinka Oluwaseun
 
-service: serverless
+service: basic-serverless-lambda
 
 provider:
   name: aws
-  runtime: nodejs18.x
-
-stage: dev
-region: us-east-1
+  runtime: nodejs20.x
+  stage: dev
+  region: us-east-1
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.generateRandomNumber
