@@ -1,0 +1,14 @@
+# Serverless Application by Olatunji Olayinka Oluwaseun
+
+service: serverless
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+stage: dev
+region: us-east-1
+
+functions:
+  hello:
+    handler: handler.hello
